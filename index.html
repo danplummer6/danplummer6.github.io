@@ -33,11 +33,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
+    <!-- Modernizr -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
-
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
@@ -72,7 +71,7 @@
         <!-- /.container -->
     </nav>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
+<!-- Video Header -->
 <div class="homepage-hero-module">
     <div class="video-container">
         <div class="title-container">
@@ -81,9 +80,10 @@
             <br>
             <br>
             <br>
-            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i>
-<span></span></a>  
+            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
         </div>
+        
+        <!-- Filter Overlay-->
         <div class="filter"></div>
         <video autoplay loop class="fillWidth">
             <source src="video/woods.mp4" type="video/mp4" />
@@ -107,35 +107,21 @@
 
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 wow bounceInLeft">
                     <h3 class="about-title">DESIGN</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum felis id tellus dapibus hendrerit. Phasellus feugiat purus leo, a facilisis dolor maximus non. Praesent malesuada odio quis odio fringilla, ac malesuada metus ultricies. Nunc luctus pellentesque fermentum. Sed ut aliquet nibh. Suspendisse sagittis felis sit amet urna sodales cursus. Nulla scelerisque augue id commodo bibendum. Ut porta lectus et sagittis efficitur. Fusce non eros nisi. Fusce luctus iaculis eros nec accumsan.</p>
-                </div>
 
-                <div class="col-md-4">
-                <div class="hovereffect">
-                    <br>
-                    <br>
-                    <img class="img-responsive center-block img-circle" src="img/me.png" alt="">
-                    <br>
-                    <p>Hover Over Me!</p>
-                    <div class="overlay">
-                        <h4>OUTSIDE OF WORK</h4>
-                        <p class="info">When I'm not at the computer I love to be outside, at the gym, and traveling with friends.
-                        <br>
-                        <br>
-                        "If you are not willing to risk the usual, you will have to settle for the ordinary." ~ Jim Rohn
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-            </div>
-                <div class="col-md-4">
                     <h3 class="about-title">DEVELOPMENT</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum felis id tellus dapibus hendrerit. Phasellus feugiat purus leo, a facilisis dolor maximus non. Praesent malesuada odio quis odio fringilla, ac malesuada metus ultricies. Nunc luctus pellentesque fermentum. Sed ut aliquet nibh. Suspendisse sagittis felis sit amet urna sodales cursus. Nulla scelerisque augue id commodo bibendum. Ut porta lectus et sagittis efficitur. Fusce non eros nisi. Fusce luctus iaculis eros nec accumsan.</p>
                 </div>
+
+                <div class="col-md-6 wow bounceInUp">
+                    <img class="img-responsive center-block img-circle" src="img/me.png" alt="">
+                    <h3 class="about-title" align="center">OUTSIDE OF WORK</h3>
+                    <p align="center">When I'm not at work I love to be outside doing anything active, or relaxing on the lake. I also enjoy traveling with friends and experiencing new places. Some of my core values are family, friends, and health.</p>
+                </div>
             </div>
+                
         </div>
     </section>
 
@@ -147,7 +133,7 @@
                     <h1 class="section-head">Projects</h1>
         
                     <!-- Projects Row -->
-                    <div class="row">
+                    <div class="row wow fadeIn">
                         <div class="col-md-4 project-1">
                             <img class="img-responsive" src="img/rz-thumb.jpg" alt="">
                             <h3 class="project-title">RZ INDUSTRIES</h3>
@@ -265,7 +251,7 @@
     
 
 <!-- Parallax -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/fishing.jpeg">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/fishing.jpg">
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <!-- Page Content -->
@@ -284,11 +270,9 @@
                 </div>
             </div>
             <!-- /.row -->
-        <!-- /.container -->
         </div>
-        <div class="fade-to-black">
-    
-</div>
+        <!-- Fade to black section -->
+        <div class="fade-to-black"></div>
     </section>
 </div>
 
@@ -297,11 +281,16 @@
     <div class="container">
         <div class="col-lg-12 foot">
 
-            <a href=""><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook-square fa-4x social" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github-square fa-4x social" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-4x social" aria-hidden="true"></i></a>
 
-            <p class="footer-text">Copyright &copy; Daniel Plummer 2016</p>
+            <p class="footer-text"><br>
+            Daniel Plummer<br>
+            Minneapolis, MN<br>
+            Danplummer6@gmail.com<br><br>
+            Copyright &copy; 2016
+            </p>
         </div>
     </div>
 </footer>
@@ -323,21 +312,17 @@
     <script src="js/lettering-0.6.1.min.js"></script>
     <script src="js/jquery.textillate.js"></script>
 
-    <!-- Scroll Reveal CDN -->
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
-
     <!-- Parallax -->
     <script src="js/parallax.min.js"></script>
+
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
 
     <!-- Heading Textilate -->
     <script>
     $( document ).ready(function() {
         $('.head-text').textillate({ in: { effect: 'fadeInUp' } });
-
-        window.sr = ScrollReveal();
-        sr.reveal('.project-1', { duration: 1000 });
-        sr.reveal('.project-2', { duration: 2000 });
-        sr.reveal('.project-3', { duration: 3000 });
+        new WOW().init();
     });
     </script>
 
