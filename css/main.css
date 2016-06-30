@@ -329,7 +329,7 @@ body.modal-open {
     overflow: visible;
 }
 
-/* close */
+/* close modal */
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
@@ -365,15 +365,11 @@ body.modal-open {
   z-index: 1052;
 }
 
-.modal-header, .modal-footer{
-  background-color: #00261C;
-  text-align: center;
-}
-
 .close-btn{
+  text-align: center;
   background-color: transparent;
-  border: 2px solid #A1FF93;
-  color: #A1FF93;
+  border: 2px solid #C91A00;
+  color: #C91A00;
   padding: 10px 25px 10px 25px;
   font-size: 1.2em;
   -webkit-transition: all 0.25s;
@@ -383,24 +379,23 @@ body.modal-open {
 }
 
 .close-btn:hover{
-  color: red;
-  border: 2px solid red;
+  color: white;
+  background-color: #C91A00;
+  border: 2px solid #C91A00;
 }
 
 .modal-title{
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  color: #A1FF93;
+  color: #044C29;
 }
 
-.project-description{
-  background-color: #EEE;
-  text-align: center;
+.project-text{
   margin-top: 25px;
   margin-bottom: 25px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .portfolio-links{
@@ -409,7 +404,7 @@ body.modal-open {
   padding-bottom: 50px;
 }
 
-.rz-img{
+.rz-img, .appshare-logo{
   height: 60%;
   width: 60%;
 }
@@ -539,4 +534,16 @@ footer{
       color: #A1FF93;
       background: none;
     }
+
+  /* hide close modal */
+  .portfolio-modal .close-modal {
+    display: none;
+  }
+
+  .portfolio-modal .close-modal .lr {
+    display: none;
+  }
+  .portfolio-modal .close-modal .lr .rl {
+    display: none;
+  }
 }
