@@ -72,28 +72,30 @@
     </nav>
 
 <!-- Video Header -->
-<div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="title-container">
-            <h1 class="head-text">Daniel Plummer</h1>
-            <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
-            <br>
-            <br>
-            <br>
-            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
-        </div>
-        
-        <!-- Filter Overlay-->
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
-            <source src="video/woods.mp4" type="video/mp4" />
-            <source src="video/woods.webm" type="video/webm">
-            Your browser does not support the video tag. I suggest you upgrade your browser.</video>
-        <div class="poster hidden">
-            <img src="img/video-poster.jpg" alt="">
+<header>
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="title-container">
+                <h1 class="head-text">Daniel Plummer</h1>
+                <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
+                <br>
+                <br>
+                <br>
+                <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
+            </div>
+            
+            <!-- Filter Overlay-->
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="video/woods.mp4" type="video/mp4" />
+                <source src="video/woods.webm" type="video/webm">
+                Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+            <div class="poster hidden">
+                <img src="img/video-poster.jpg" alt="">
+            </div>
         </div>
     </div>
-</div>
+</header>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -109,16 +111,17 @@
             <div class="row">
                 <div class="col-md-6 wow bounceInLeft">
                     <h3 class="about-title">DESIGN</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum felis id tellus dapibus hendrerit. Phasellus feugiat purus leo, a facilisis dolor maximus non. Praesent malesuada odio quis odio fringilla, ac malesuada metus ultricies. Nunc luctus pellentesque fermentum. Sed ut aliquet nibh. Suspendisse sagittis felis sit amet urna sodales cursus. Nulla scelerisque augue id commodo bibendum. Ut porta lectus et sagittis efficitur. Fusce non eros nisi. Fusce luctus iaculis eros nec accumsan.</p>
+                    <p>I believe in keeping the design aspect simple and to the point, allowing even the most novice user to seamlessly navigate the website. The most important thing when designing a web page is to clearly convey the message your company is trying to send. Another aspect I like to focus on is strong typography and a great color scheme thats lets the user easily focus on the text.</p>
 
                     <h3 class="about-title">DEVELOPMENT</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum felis id tellus dapibus hendrerit. Phasellus feugiat purus leo, a facilisis dolor maximus non. Praesent malesuada odio quis odio fringilla, ac malesuada metus ultricies. Nunc luctus pellentesque fermentum. Sed ut aliquet nibh. Suspendisse sagittis felis sit amet urna sodales cursus. Nulla scelerisque augue id commodo bibendum. Ut porta lectus et sagittis efficitur. Fusce non eros nisi. Fusce luctus iaculis eros nec accumsan.</p>
+                    <p>My skillset leans towards front-end development, and I also have experience with back-end development and working with databases. I can create responsive websites that run great across all devices and browsers using the latest industry standard technology.</p>
                 </div>
-
+                <br>
+                <br>
                 <div class="col-md-6 wow bounceInUp">
                     <img class="img-responsive center-block img-circle" src="img/me.png" alt="">
-                    <h3 class="about-title" align="center">OUTSIDE OF WORK</h3>
-                    <p align="center">When I'm not at work I love to be outside doing anything active, or relaxing on the lake. I also enjoy traveling with friends and experiencing new places. Some of my core values are family, friends, and health.</p>
+                    <h3 class="about-title center-text">OUTSIDE OF WORK</h3>
+                    <p class="center-text">When I'm not at work I love to be outside doing anything active, or relaxing on the lake. I also enjoy traveling with friends and experiencing new places. Some of my core values are family, friends, and health.</p>
                 </div>
             </div>
                 
@@ -134,23 +137,17 @@
         
                     <!-- Projects Row -->
                     <div class="row">
-                        <div class="col-md-4 wow fadeIn">
+                        <div class="col-md-6 mobile-break wow fadeIn">
                             <img class="img-responsive" src="img/rz-thumb.jpg" alt="">
                             <h3 class="project-title">RZ INDUSTRIES</h3>
                             <p>In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards.</p>
                             <a href="#projectModal1" class="project-link" data-toggle="modal">View Project</a>
                         </div>
-                        <div class="col-md-4 wow fadeIn">
+                        <div class="col-md-6 wow fadeIn">
                             <img class="img-responsive" src="img/appshare.jpg" alt="">
                             <h3 class="project-title">AppShare</h3>
                             <p>AppShare is a school final project that lets users post ideas for web / mobile applications. This website was created using the php framework codeigniter.</p>
                             <a href="#projectModal2" class="project-link" data-toggle="modal">View Project</a>
-                        </div>
-                        <div class="col-md-4 wow fadeIn">
-                            <img class="img-responsive" src="http://placehold.it/700x467" alt="">
-                            <h3 class="project-title">PROJECT THREE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                            <a href="#" class="project-link" data-toggle="modal" data-target="#myModal3">View Project</a>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -173,14 +170,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2 class="modal-title">RZ INDUSTRIES</h4>
+                            <h2 class="modal-title">RZ INDUSTRIES</h2>
                             <hr>
                             <img src="img/rz-responsive.jpg" class="img-responsive center-block" alt="">
                             <p class="project-text">
                             The goal at RZ is to be the leader in your protection by combining comfort and durability with a product that filters out 99.9% of air born particulates. The RZ mask can filter particles down to 0.1 microns in size and offers unmatched protection and comfort.
                             <br>
                             <br>
-                            In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards. I began by constructiong wireframes, then created the pages using HTML5 and Bootstrap, and finally styled the pages with CSS3 and jQuery. 
+                            In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards. I began by constructiong wireframes, then created the pages using HTML5 and Bootstrap, and finally styled the pages with CSS3 and jQuery. Take a look at the live pages below.
                             </p>
 
                             <div class="portfolio-links">
@@ -219,18 +216,40 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2 class="modal-title">AppShare</h4>
+                            <h2 class="modal-title">AppShare</h2>
                             <hr>
-                            <img src="img/appshare.jpg" class="img-responsive center-block appshare-logo" alt="">
+                            <img src="img/appshare.jpg" class="img-responsive center-block appshare-img" alt="">
                             <p class="project-text">
-                            AppShare was my final project at Full Sail University. Although the website is not live, the code lives on through <a href="https://github.com/danplummer6/AppShare" target='_blank'>GitHub.</a>Appshare was built on using the php framework Codeigniter, Bootstrap, MySql, HTML5, CSS3, and JavaScript.
+                            AppShare was my final project at Full Sail University. Although the website is not live, the code lives on here at <a href="https://github.com/danplummer6/AppShare" target='_blank'>GitHub.</a> Appshare was built using the php framework Codeigniter, Bootstrap, MySql, HTML5, CSS3, and JavaScript.
                             <br>
                             <br>
+                            In this project my professor acted as a venture capitalist investing in my idea and I was responsible for presenting a project proposal, performing maintenance after launch, and everything in between. The concept of the website is to have users register and then be able to submit ideas for web / mobile applications, as well as explore other peoples app submissions. Users also have a dashboard where they can submit new ideas and view, edit, and delete all of their submissions. Extra features include form validation, password encryption, 5 star rating system, commenting on submissions, and a facebook share button for each app submission. 
+                            <br>
+                            <br>
+                            Once my concept was approved the project was completed in the following stages.</p>
+                            <ol class="phase-list">
+                                <li>Logo design and style guide.</li>
+                                <li>Create wireframes and design Comps.</li>
+                                <li>Begin development phase.</li>
+                                <li>Alpha stage.</li>
+                                <li>Beta stage.</li>
+                                <li>Debug and maintenance.</li>
+                                <li>Site Launch and post mortem.</li>
+                            </ol>
                             
-                            </p>
+                            
+                            <h5 class="modal-title">Style Guide</h5>
+                            <img src="img/style-guide.png" class="img-responsive center-block appshare-img" alt="">
+                            <br>
+                            <h5 class="modal-title">Homepage Wireframe</h5>
+                            <img src="img/appshare-wire.jpg" class="img-responsive center-block appshare-img" alt="">
+                            <br>
+                            <h5 class="modal-title">Homepage Design Comp.</h5>
+                            <img src="img/appshare-design-comp.png" class="img-responsive center-block appshare-img" alt="">
+                            <br>
+                        
 
-                            
-                            
+
                             <button type="button" class="btn close-btn center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -256,7 +275,7 @@
 
                 <div class="col-md-8 col-md-offset-2 contact-content">
                     <h2 class="contact-subhead">I am currently available for freelance work!</h2>
-                    <p>Please feel free to contact me if you have any work you need done, would like to collaborate, or just say hello.</p>
+                    <p>Please feel free to contact me if you have any work you want done, would like to collaborate, or just say hello.</p>
                     <a href="mailto:danplummer6@gmail.com?Subject=Hey%20Dan" class="btn contact-btn">Email Me &nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -272,9 +291,9 @@
     <div class="container">
         <div class="col-lg-12 foot">
 
-            <a href="#"><i class="fa fa-facebook-square fa-4x social" aria-hidden="true"></i></a>
-            <a href="https://github.com/danplummer6" target='_blank'><i class="fa fa-github-square fa-4x social" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square fa-4x social" aria-hidden="true"></i></a>
+            <p>Check out my GitHub</p>
+            <a href="https://github.com/danplummer6" target='_blank'><i class="fa fa-github fa-4x social" aria-hidden="true"></i></a>
+            
 
             <p class="footer-text"><br>
             Daniel Plummer<br>

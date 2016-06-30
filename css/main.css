@@ -42,6 +42,10 @@ p{
   letter-spacing: 1px;
 }
 
+.center-text{
+  text-align: center;
+}
+
 /* ========== NAV BAR ========== */
 
 .navbar-inverse{
@@ -404,7 +408,13 @@ body.modal-open {
   padding-bottom: 50px;
 }
 
-.rz-img, .appshare-logo{
+.phase-list{
+  margin-top: -40px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 25px;
+}
+
+.rz-img, .appshare-img{
   height: 60%;
   width: 60%;
 }
@@ -533,6 +543,14 @@ footer{
     .navbar-inverse .navbar-nav > .active > a:focus {
       color: #A1FF93;
       background: none;
+    }
+
+    .video-container .title-container{
+      top: 20%;
+    }
+
+    .mobile-break{
+      margin-bottom: 25px;
     }
 
   /* hide close modal */
