@@ -123,6 +123,7 @@ p{
 #video-head{
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 #video-background {
