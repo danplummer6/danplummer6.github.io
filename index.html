@@ -63,31 +63,28 @@
         <!-- /.container -->
     </nav>
 
-<!-- Video Header -->
-<header>
-    <div class="homepage-hero-module">
-        <div class="video-container">
-            <div class="title-container">
-                <h1 class="head-text">Daniel Plummer</h1>
-                <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
-                <br>
-                <br>
-                <br>
-                <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
-            </div>
+    <header id="video-head">
+        <video autoplay loop muted poster="video-poster.jpg" id="video-background">
+            <source src="video/woods.mp4" type="video/mp4" />
+            <source src="video/woods.webm" type="video/webm">
+            Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+        </video>
             
-            <!-- Filter Overlay-->
-            <div class="filter"></div>
-            <video autoplay loop class="fillWidth">
-                <source src="video/woods.mp4" type="video/mp4" />
-                <source src="video/woods.webm" type="video/webm">
-                Your browser does not support the video tag. I suggest you upgrade your browser.</video>
-            <div class="poster hidden">
-                <img src="img/video-poster.jpg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-container">
+                        <h1 class="head-text">Daniel Plummer</h1>
+                        <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -300,9 +297,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Video -->
-    <script src="js/video.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
