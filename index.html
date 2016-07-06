@@ -63,28 +63,27 @@
         <!-- /.container -->
     </nav>
 
-    <header id="video-head">
-        <video autoplay loop muted poster="img/video-poster.jpg" id="video-background">
+    <div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="title-container">
+            <h1 class="head-text">Daniel Plummer</h1>
+            <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
+            <br>
+            <br>
+            <br>
+            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+<span></span></a>  
+        </div>
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
             <source src="video/woods.mp4" type="video/mp4" />
             <source src="video/woods.webm" type="video/webm">
-            Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-            
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-container">
-                        <h1 class="head-text">Daniel Plummer</h1>
-                        <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
-                        <br>
-                        <br>
-                        <br>
-                        <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i><span></span></a>  
-                    </div>
-                </div>
-            </div>
+            Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+        <div class="poster hidden">
+            <img src="img/video-poster.jpg" alt="">
         </div>
-    </header>
+    </div>
+</div>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -311,6 +310,9 @@
 
     <!-- WOW -->
     <script src="js/wow.min.js"></script>
+
+    <!-- Video -->
+    <script src="js/video.js"></script>
 
     <!-- Heading Textilate -->
     <script>
