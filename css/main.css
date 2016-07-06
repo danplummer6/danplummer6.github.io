@@ -120,10 +120,18 @@ p{
 
 /* ========== VIDEO HEADER ========== */
 
+video { 
+  background:transparent url('../img/video-poster.jpg') no-repeat 0 0; 
+  -webkit-background-size:cover; 
+  -moz-background-size:cover; 
+  -o-background-size:cover; 
+  background-size:cover;
+  overflow: hidden;
+}
+
 #video-head{
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  overflow: hidden;
 }
 
 #video-background {
