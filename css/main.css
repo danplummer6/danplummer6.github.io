@@ -501,8 +501,8 @@ footer{
       background: none;
     }
 
-    .video-container .title-container{
-      top: 20%;
+    .title-container{
+      margin-top: 100px;
     }
 
     .mobile-break{
