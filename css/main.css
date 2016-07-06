@@ -120,15 +120,6 @@ p{
 
 /* ========== VIDEO HEADER ========== */
 
-video { 
-  background:transparent url('../img/video-poster.jpg') no-repeat 0 0; 
-  -webkit-background-size:cover; 
-  -moz-background-size:cover; 
-  -o-background-size:cover; 
-  background-size:cover;
-  overflow: hidden;
-}
-
 #video-head{
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
@@ -145,8 +136,12 @@ video {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
+  background: url('../img/video-poster.jpg') no-repeat;
+  -webkit-background-size:cover; 
+  -moz-background-size:cover; 
+  -o-background-size:cover; 
+  background-size:cover;
+  overflow: hidden;
 }
 
 /* ========== Header ========== */
