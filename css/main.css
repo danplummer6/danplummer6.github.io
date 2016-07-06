@@ -136,12 +136,7 @@ p{
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url('../img/video-poster.jpg') no-repeat;
-  -webkit-background-size:cover; 
-  -moz-background-size:cover; 
-  -o-background-size:cover; 
-  background-size:cover;
-  overflow: hidden;
+  background: url('../img/video-poster.jpg');
 }
 
 /* ========== Header ========== */
