@@ -122,6 +122,7 @@ p{
 
 #video-head{
   height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -129,16 +130,10 @@ p{
   position: fixed;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -504,7 +499,7 @@ footer{
     }
 
     .title-container{
-      margin-top: 100px;
+      margin-top: 125px;
     }
 
     .mobile-break{
