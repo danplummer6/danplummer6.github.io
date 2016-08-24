@@ -63,26 +63,17 @@
         <!-- /.container -->
     </nav>
 
-    <div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="title-container">
-            <h1 class="head-text">Daniel Plummer</h1>
+<div id="video-head" style="width: 100%;" data-vide-bg="video/woods.mp4" data-vide-options="position: 0% 50%">
+    <div>
+        <h1 class="head-text">Daniel Plummer</h1>
             <p class="head-subtext">Web Designer / Developer currently living in Minneapolis, MN</p>
             <br>
             <br>
             <br>
-            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i>
-<span></span></a>  
-        </div>
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
-            <source src="video/woods.mp4" type="video/mp4" />
-            <source src="video/woods.webm" type="video/webm">
-            Your browser does not support the video tag. I suggest you upgrade your browser.</video>
-        <div class="poster hidden">
-            <img src="img/video-poster.jpg" alt="">
-        </div>
+            <a href="#about" class="down-button page-scroll down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            <div class="filter"></div>
     </div>
+
 </div>
 
     <!-- About Section -->
@@ -97,21 +88,24 @@
 
 
             <div class="row">
-                <div class="col-md-6 wow bounceInLeft">
+                <div class="col-md-6 wow bounceInLeft" data-wow-duration="1.5s">
                     <h3 class="about-title">DESIGN</h3>
                     <p>I believe in keeping the design aspect simple and to the point, allowing even the most novice user to seamlessly navigate the website. The most important thing when designing a web page is to clearly convey the message your company is trying to send. Another aspect I like to focus on is strong typography and a great color scheme thats lets the user easily focus on the text.</p>
+                </div>
 
+                <div class="col-md-6 wow bounceInRight" data-wow-duration="1.5s">
                     <h3 class="about-title">DEVELOPMENT</h3>
                     <p>My skillset leans towards front-end development, and I also have experience with back-end development and working with databases. I can create responsive websites that run great across all devices and browsers using the latest industry standard technology.</p>
                 </div>
-                <br>
-                <br>
-                <div class="col-md-6 wow bounceInUp">
-                    <img class="img-responsive center-block img-circle" src="img/me.png" alt="">
+            </div>
+<!--
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 wow bounceInUp">
                     <h3 class="about-title center-text">OUTSIDE OF WORK</h3>
                     <p class="center-text">When I'm not at work I love to be outside doing anything active, or relaxing on the lake. I also enjoy traveling with friends and experiencing new places. Some of my core values are family, friends, and health.</p>
                 </div>
             </div>
+-->
                 
         </div>
     </section>
@@ -125,19 +119,19 @@
         
                     <!-- Projects Row -->
                     <div class="row">
-                        <div class="col-md-4 mobile-break wow fadeIn">
+                        <div class="col-md-4 mobile-break wow fadeIn" data-wow-delay="0.5s">
                             <img class="img-responsive" src="img/rz-thumb.jpg" alt="">
                             <h3 class="project-title">RZ INDUSTRIES</h3>
                             <p>In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards.</p>
                             <a href="#projectModal1" class="project-link" data-toggle="modal">View Project</a>
                         </div>
-                        <div class="col-md-4 mobile-break wow fadeIn">
+                        <div class="col-md-4 mobile-break wow fadeIn" data-wow-delay="0.5s">
                             <img class="img-responsive" src="img/appshare.jpg" alt="">
                             <h3 class="project-title">AppShare</h3>
                             <p>AppShare is a school final project that lets users post ideas for web / mobile applications. This website was created using the PHP framework codeigniter.</p>
                             <a href="#projectModal2" class="project-link" data-toggle="modal">View Project</a>
                         </div>
-                        <div class="col-md-4 wow fadeIn">
+                        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
                             <img class="img-responsive center-block" src="img/mnlogo.png" alt="">
                             <h3 class="project-title">MN Educational Tours</h3>
                             <p>MN Educational Tours is a freelance project I completed for a client that provides chartered day trips from Minneapolis to Washington DC.</p>
@@ -165,17 +159,20 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2 class="modal-title">RZ INDUSTRIES</h2>
+                            <p class="text-center"><a href="hhttps://rzmask.com/" class="project-link" target="_blank">www.rzmask.com</a></p>
                             <hr>
                             <img src="img/rz-responsive.jpg" class="img-responsive center-block" alt="">
                             <p class="project-text">
                             The goal at RZ is to be the leader in your protection by combining comfort and durability with a product that filters out 99.9% of airborne particulates. The RZ mask can filter particles down to 0.1 microns in size and offers unmatched protection and comfort.
                             <br>
                             <br>
-                            In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards. I began by constructiong wireframes, then created the pages using HTML5 and Bootstrap, and finally styled the pages with CSS3 and jQuery. Take a look at the live pages below.
+                            In this professional project I was responsible for creating a unique experience for each specific industry the company was marketing towards and redesigning the homepage. I began by constructiong wireframes, then created the pages using HTML5 and Bootstrap, and finally styled the pages with CSS3 and jQuery. Take a look at the live pages below.
                             </p>
 
                             <div class="portfolio-links">
                                 <h2 class="section-head">Project Links</h2>
+                                <h4>HOME PAGE</h4>
+                                <a href="https://rzmask.com" class="project-link">Home</a><br>
                                 <h4>INDUSTRY PAGES</h4>
                                 <a href="https://rzmask.com/pages/agriculture" class="project-link">Agriculture</a><br>
                                 <a href="https://rzmask.com/pages/construction" class="project-link">Construction</a><br>
@@ -353,6 +350,9 @@
 
     <!-- Video -->
     <script src="js/video.js"></script>
+
+    <!-- Vide -->
+    <script src="js/jquery.vide.min.js"></script>
 
     <!-- Heading Textilate -->
     <script>
